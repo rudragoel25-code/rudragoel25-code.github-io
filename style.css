@@ -65,24 +65,22 @@ body {
   color: white;
 }
 
-.search-btn{
-  width:64px;
-  border-radius:0 24px 24px 0;
-  background:#222;
-  border:1px solid #303030;
-  cursor: pointer;   
+.search-btn {
+  width: 64px;
+  border-radius: 0 24px 24px 0;
+  background: #222;
+  border: 1px solid #303030;
+  cursor: pointer;
 }
 
-
-.mic-btn{
-  margin-left:8px;
-  padding:10px;
-  border-radius:50%;
-  background:#222;
-  text-decoration:none;
-  cursor: pointer;  
+.mic-btn {
+  margin-left: 8px;
+  padding: 10px;
+  border-radius: 50%;
+  background: #222;
+  text-decoration: none;
+  cursor: pointer;
 }
-
 
 .right {
   display: flex;
@@ -229,4 +227,50 @@ body {
 .text p {
   font-size: 12px;
   color: #aaa;
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 0 12px;
+  }
+
+  .center {
+    width: 100%;
+    margin: 0 8px;
+  }
+
+  .center input {
+    padding: 8px 12px;
+  }
+
+  .create-btn {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  /* CONTENT */
+  .content {
+    padding: 12px;
+  }
+
+  .categories {
+    gap: 8px;
+    padding-bottom: 10px;
+  }
+
+  .chip {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .videos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card iframe {
+    height: 200px;
+  }
 }
