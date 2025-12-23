@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>YouTube Clone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="menu-toggle" />
+
+    <header class="header">
+      <div class="left">
+        <label for="menu-toggle" class="menu">☰</label>
+
+        <a href="https://www.youtube.com" target="_blank" class="logo-link">
+          <div class="logo-wrap">
+            <span class="country">IN</span>
+            <img
+              src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo_dark.svg"
+              class="logo"
+              alt="YouTube"
+            />
+          </div>
+        </a>
+      </div>
+
+      <form
+        class="center"
+        action="https://www.youtube.com/results"
+        method="get"
+        target="_blank"
+      >
+        <input type="text" name="search_query" placeholder="Search" required />
+
+        <button type="submit" class="search-btn">🔍</button>
+
+        <a href="https://www.youtube.com/voice_search" class="mic-btn">🎤</a>
+      </form>
+
+      <div class="right">
+        <a href="https://www.youtube.com/upload" class="create-btn"
+          >＋ Create</a
+        >
+
+        <a href="https://www.youtube.com/notifications" class="notify">
+          🔔 <span class="badge">9+</span>
+        </a>
+
+        <a href="https://www.youtube.com/account" class="profile">🙂</a>
+      </div>
+    </header>
+
+    <div class="main">
+      <aside class="sidebar">
+        <div class="full">
+          <a class="active" href="https://www.youtube.com">🏠 Home</a>
+          <a href="https://www.youtube.com/shorts">▶ Shorts</a>
+          <a href="https://www.youtube.com/feed/subscriptions"
+            >📺 Subscriptions</a
+          >
+
+          <hr />
+
+          <a href="https://www.youtube.com/feed/explore">🔥 Explore</a>
+          <a href="https://www.youtube.com/feed/trending">📈 Trending</a>
+          <a href="https://www.youtube.com/music">🎵 Music</a>
+          <a href="https://www.youtube.com/gaming">🎮 Gaming</a>
+          <a href="https://www.youtube.com/sports">🏏 Sports</a>
+
+          <hr />
+
+          <a href="https://www.youtube.com/feed/library">📚 Library</a>
+          <a href="https://www.youtube.com/feed/history">🕒 History</a>
+          <a href="https://www.youtube.com/playlist?list=WL">⏱ Watch later</a>
+        </div>
+
+        <div class="mini">
+          <a href="#"><span>🏠</span><small>Home</small></a>
+          <a href="#"><span>▶</span><small>Shorts</small></a>
+          <a href="#"><span>📺</span><small>Subs</small></a>
+        </div>
+      </aside>
+
+      <section class="content">
+        <nav class="categories">
+          <a class="chip active" href="https://www.youtube.com" target="_blank"
+            >All</a
+          >
+          <a
+            class="chip"
+            href="https://www.youtube.com/results?search_query=Indian+Premier+League"
+            target="_blank"
+            >IPL</a
+          >
+          <a
+            class="chip"
+            href="https://www.youtube.com/results?search_query=Gaming"
+            target="_blank"
+            >Gaming</a
+          >
+          <a
+            class="chip"
+            href="https://www.youtube.com/results?search_query=Music"
+            target="_blank"
+            >Music</a
+          >
+          <a
+            class="chip"
+            href="https://www.youtube.com/results?search_query=Podcasts"
+            target="_blank"
+            >Podcasts</a
+          >
+          <a
+            class="chip"
+            href="https://www.youtube.com/results?search_query=C%2B%2B"
+            target="_blank"
+            >C++</a
+          >
+          <a
+            class="chip"
+            href="https://www.youtube.com/results?search_query=DSA"
+            target="_blank"
+            >DSA</a
+          >
+          <a
+            class="chip"
+            href="https://www.youtube.com/results?search_query=Web+Development"
+            target="_blank"
+            >Web Dev</a
+          >
+          <a
+            class="chip"
+            href="https://www.youtube.com/results?search_query=Artificial+Intelligence"
+            target="_blank"
+          >
+            Artificial Intelligence
+          </a>
+
+          <a
+            class="chip"
+            href="https://www.youtube.com/results?search_query=Machine+Learning"
+            target="_blank"
+          >
+            Machine Learning
+          </a>
+          <a
+            class="chip"
+            href="https://www.youtube.com/results?search_query=Cyber+Security"
+            target="_blank"
+          >
+            Cyber Security
+          </a>
+        </nav>
+
+        <div class="videos">
+          <div class="card">
+            <iframe
+              src="https://www.youtube.com/embed/HcOc7P5BMi4"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="info">
+              <div class="avatar"></div>
+              <div class="text">
+                <h4>HTML & CSS Full Course</h4>
+                <p>Apna College</p>
+                <p>27M views • 3 years ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <iframe
+              src="https://www.youtube.com/embed/UB1O30fR-EE"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="info">
+              <div class="avatar"></div>
+              <div class="text">
+                <h4>HTML Crash Course</h4>
+                <p>Traversy Media</p>
+                <p>3.4M views • 2 years ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <iframe
+              src="https://www.youtube.com/embed/mU6anWqZJcc"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="info">
+              <div class="avatar"></div>
+              <div class="text">
+                <h4>CSS Flexbox in 20 Minutes</h4>
+                <p>Web Dev Simplified</p>
+                <p>2M views • 10 months ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <iframe
+              src="https://www.youtube.com/embed/1Rs2ND1ryYc"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="info">
+              <div class="avatar"></div>
+              <div class="text">
+                <h4>Complete HTML Tutorial</h4>
+                <p>CodeWithHarry</p>
+                <p>10M views • 4 years ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <iframe
+              src="https://www.youtube.com/embed/8jLOx1hD3_o"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="info">
+              <div class="avatar"></div>
+              <div class="text">
+                <h4>C++ Full Course</h4>
+                <p>freeCodeCamp</p>
+                <p>9M views • 2 years ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <iframe
+              src="https://www.youtube.com/embed/BBpAmxU_NQo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="info">
+              <div class="avatar"></div>
+              <div class="text">
+                <h4>Data Structures & Algorithms</h4>
+                <p>Abdul Bari</p>
+                <p>4M views • 1 year ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <iframe
+              src="https://www.youtube.com/embed/qz0aGYrrlhU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+            </iframe>
+            <div class="info">
+              <div class="avatar"></div>
+              <div class="text">
+                <h4>HTML Tutorial for Beginners</h4>
+                <p>Programming with Mosh</p>
+                <p>8M views • 5 years ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <iframe
+              src="https://www.youtube.com/embed/yfoY53QXEnI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+            </iframe>
+            <div class="info">
+              <div class="avatar"></div>
+              <div class="text">
+                <h4>CSS Crash Course</h4>
+                <p>Traversy Media</p>
+                <p>5M views • 6 years ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <iframe
+              src="https://www.youtube.com/embed/RBSGKlAvoiM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+            </iframe>
+            <div class="info">
+              <div class="avatar"></div>
+              <div class="text">
+                <h4>Data Structures Full Course</h4>
+                <p>freeCodeCamp.org</p>
+                <p>6M views • 3 years ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <iframe
+              src="https://www.youtube.com/embed/zJSY8tbf_ys"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+            </iframe>
+            <div class="info">
+              <div class="avatar"></div>
+              <div class="text">
+                <h4>JavaScript Full Course</h4>
+                <p>freeCodeCamp.org</p>
+                <p>12M views • 3 years ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <iframe
+              src="https://www.youtube.com/embed/OK_JCtrrv-c"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+            </iframe>
+            <div class="info">
+              <div class="avatar"></div>
+              <div class="text">
+                <h4>Git & GitHub Tutorial</h4>
+                <p>Apna College</p>
+                <p>2.8M views • 1 year ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <iframe
+              src="https://www.youtube.com/embed/W6NZfCO5SIk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+            </iframe>
+            <div class="info">
+              <div class="avatar"></div>
+              <div class="text">
+                <h4>JavaScript in 1 Hour</h4>
+                <p>Programming with Mosh</p>
+                <p>15M views • 4 years ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <iframe
+              src="https://www.youtube.com/embed/nu_pCVPKzTk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+            </iframe>
+            <div class="info">
+              <div class="avatar"></div>
+              <div class="text">
+                <h4>React JS Full Course</h4>
+                <p>freeCodeCamp.org</p>
+                <p>5M views • 2 years ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <iframe
+              src="https://www.youtube.com/embed/XKHEtdqhLK8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+            </iframe>
+            <div class="info">
+              <div class="avatar"></div>
+              <div class="text">
+                <h4>Python Tutorial for Beginners</h4>
+                <p>Programming with Mosh</p>
+                <p>22M views • 4 years ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <iframe
+              src="https://www.youtube.com/embed/ua-CiDNNj30"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+            </iframe>
+            <div class="info">
+              <div class="avatar"></div>
+              <div class="text">
+                <h4>Operating Systems Full Course</h4>
+                <p>Gate Smashers</p>
+                <p>3.2M views • 2 years ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
