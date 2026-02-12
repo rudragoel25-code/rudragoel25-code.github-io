@@ -1,11 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>YouTube Clone</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
+
   <body>
     <input type="checkbox" id="menu-toggle" />
 
@@ -16,7 +24,8 @@
         <a href="https://www.youtube.com" target="_blank" class="logo-link">
           <div class="logo-wrap">
             <span class="country">IN</span>
-            <img src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg"
+            <img
+              src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg"
               class="logo"
               alt="YouTube"
             />
@@ -32,52 +41,97 @@
       >
         <input type="text" name="search_query" placeholder="Search" required />
 
-        <button type="submit" class="search-btn">🔍</button>
-
-        <a href="https://www.youtube.com/voice_search" class="mic-btn">🎤</a>
+        <button type="submit" class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <a href="https://www.youtube.com/voice" class="mic-btn">
+          <i class="fa-solid fa-microphone"></i>
+        </a>
       </form>
 
       <div class="right">
-        <a href="https://www.youtube.com/upload" class="create-btn"
-          >＋ Create</a
-        >
-
-        <a href="https://www.youtube.com/notifications" class="notify">
-          🔔 <span class="badge">9+</span>
+        <!-- Create (camera with plus) -->
+        <a href="https://www.youtube.com/upload" class="create-btn">
+          <i class="fa-solid fa-video"></i>
         </a>
 
-        <a href="https://www.youtube.com/account" class="profile">🙂</a>
+        <!-- Notifications (bell) -->
+        <a href="https://www.youtube.com/notifications" class="notify">
+          <i class="fa-regular fa-bell"></i>
+          <span class="badge">9</span>
+        </a>
+
+        <!-- Profile (user circle) -->
+        <a href="https://www.youtube.com/account" class="profile">
+          <i class="fa-regular fa-user"></i>
+        </a>
       </div>
     </header>
 
     <div class="main">
       <aside class="sidebar">
         <div class="full">
-          <a class="active" href="https://www.youtube.com">🏠 Home</a>
-          <a href="https://www.youtube.com/shorts">▶ Shorts</a>
-          <a href="https://www.youtube.com/feed/subscriptions"
-            >📺 Subscriptions</a
-          >
-
+          <a class="active" href="https://www.youtube.com">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+          <a href="https://www.youtube.com/shorts">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Shorts</span>
+          </a>
+          <a href="https://www.youtube.com/feed/subscriptions">
+            <i class="fa-regular fa-square"></i>
+            <span>Subscriptions</span>
+          </a>
           <hr />
-
-          <a href="https://www.youtube.com/feed/explore">🔥 Explore</a>
-          <a href="https://www.youtube.com/feed/trending">📈 Trending</a>
-          <a href="https://www.youtube.com/music">🎵 Music</a>
-          <a href="https://www.youtube.com/gaming">🎮 Gaming</a>
-          <a href="https://www.youtube.com/sports">🏏 Sports</a>
-
+          <a href="https://www.youtube.com/feed/explore">
+            <i class="fa-regular fa-compass"></i>
+            <span>Explore</span>
+          </a>
+          <a href="https://www.youtube.com/feed/trending">
+            <i class="fa-solid fa-fire"></i>
+            <span>Trending</span>
+          </a>
+          <a href="https://www.youtube.com/music">
+            <i class="fa-solid fa-music"></i>
+            <span>Music</span>
+          </a>
+          <a href="https://www.youtube.com/gaming">
+            <i class="fa-solid fa-gamepad"></i>
+            <span>Gaming</span>
+          </a>
+          <a href="https://www.youtube.com/sports">
+            <i class="fa-solid fa-trophy"></i>
+            <span>Sports</span>
+          </a>
           <hr />
-
-          <a href="https://www.youtube.com/feed/library">📚 Library</a>
-          <a href="https://www.youtube.com/feed/history">🕒 History</a>
-          <a href="https://www.youtube.com/playlist?list=WL">⏱ Watch later</a>
+          <a href="https://www.youtube.com/feed/library">
+            <i class="fa-regular fa-rectangle-list"></i>
+            <span>Library</span>
+          </a>
+          <a href="https://www.youtube.com/feed/history">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span>History</span>
+          </a>
+          <a href="https://www.youtube.com/playlist?list=WL">
+            <i class="fa-regular fa-clock"></i>
+            <span>Watch later</span>
+          </a>
         </div>
 
         <div class="mini">
-          <a href="#"><span>🏠</span><small>Home</small></a>
-          <a href="#"><span>▶</span><small>Shorts</small></a>
-          <a href="#"><span>📺</span><small>Subs</small></a>
+          <a href="https://www.youtube.com">
+            <i class="fa-solid fa-house"></i>
+            <small>Home</small>
+          </a>
+          <a href="https://www.youtube.com/shorts">
+            <i class="fa-solid fa-bolt"></i>
+            <small>Shorts</small>
+          </a>
+          <a href="https://www.youtube.com/feed/subscriptions">
+            <i class="fa-regular fa-square"></i>
+            <small>Subs</small>
+          </a>
         </div>
       </aside>
 
@@ -156,7 +210,15 @@
           <div class="card">
             <iframe
               src="https://www.youtube.com/embed/HcOc7P5BMi4"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
               allowfullscreen
             ></iframe>
             <div class="info">
@@ -172,7 +234,15 @@
           <div class="card">
             <iframe
               src="https://www.youtube.com/embed/UB1O30fR-EE"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
               allowfullscreen
             ></iframe>
             <div class="info">
@@ -188,7 +258,15 @@
           <div class="card">
             <iframe
               src="https://www.youtube.com/embed/mU6anWqZJcc"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
               allowfullscreen
             ></iframe>
             <div class="info">
@@ -204,7 +282,15 @@
           <div class="card">
             <iframe
               src="https://www.youtube.com/embed/1Rs2ND1ryYc"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
               allowfullscreen
             ></iframe>
             <div class="info">
@@ -220,7 +306,15 @@
           <div class="card">
             <iframe
               src="https://www.youtube.com/embed/8jLOx1hD3_o"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
               allowfullscreen
             ></iframe>
             <div class="info">
@@ -236,7 +330,15 @@
           <div class="card">
             <iframe
               src="https://www.youtube.com/embed/BBpAmxU_NQo"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
               allowfullscreen
             ></iframe>
             <div class="info">
@@ -254,7 +356,15 @@
               src="https://www.youtube.com/embed/qz0aGYrrlhU"
               title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
               allowfullscreen
             >
             </iframe>
@@ -273,7 +383,15 @@
               src="https://www.youtube.com/embed/yfoY53QXEnI"
               title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
               allowfullscreen
             >
             </iframe>
@@ -292,7 +410,15 @@
               src="https://www.youtube.com/embed/RBSGKlAvoiM"
               title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
               allowfullscreen
             >
             </iframe>
@@ -311,7 +437,15 @@
               src="https://www.youtube.com/embed/zJSY8tbf_ys"
               title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
               allowfullscreen
             >
             </iframe>
@@ -330,7 +464,15 @@
               src="https://www.youtube.com/embed/OK_JCtrrv-c"
               title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
               allowfullscreen
             >
             </iframe>
@@ -349,7 +491,15 @@
               src="https://www.youtube.com/embed/W6NZfCO5SIk"
               title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
               allowfullscreen
             >
             </iframe>
@@ -367,7 +517,15 @@
               src="https://www.youtube.com/embed/nu_pCVPKzTk"
               title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
               allowfullscreen
             >
             </iframe>
@@ -386,7 +544,15 @@
               src="https://www.youtube.com/embed/XKHEtdqhLK8"
               title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
               allowfullscreen
             >
             </iframe>
@@ -404,7 +570,15 @@
               src="https://www.youtube.com/embed/ua-CiDNNj30"
               title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
               allowfullscreen
             >
             </iframe>
